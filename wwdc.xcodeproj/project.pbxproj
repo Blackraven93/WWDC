@@ -14,6 +14,12 @@
 		973B3E88283BCC7E00F98571 /* wwdcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3E87283BCC7E00F98571 /* wwdcTests.swift */; };
 		973B3E92283BCC7E00F98571 /* wwdcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3E91283BCC7E00F98571 /* wwdcUITests.swift */; };
 		973B3E94283BCC7E00F98571 /* wwdcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3E93283BCC7E00F98571 /* wwdcUITestsLaunchTests.swift */; };
+		973B3EE7283BDF2300F98571 /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3EE6283BDF2300F98571 /* BookCard.swift */; };
+		973B3EEC283BDF5A00F98571 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3EEB283BDF5A00F98571 /* Book.swift */; };
+		973B3EEE283BDF9C00F98571 /* BookCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3EED283BDF9C00F98571 /* BookCover.swift */; };
+		973B3EF2283BE46300F98571 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3EF1283BE46300F98571 /* ModelData.swift */; };
+		973B3EF7283BFA4D00F98571 /* bookData.json in Resources */ = {isa = PBXBuildFile; fileRef = 973B3EF0283BE14D00F98571 /* bookData.json */; };
+		973B3EF9283BFE0000F98571 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B3EF8283BFE0000F98571 /* BookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		973B3E8D283BCC7E00F98571 /* wwdcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwdcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		973B3E91283BCC7E00F98571 /* wwdcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwdcUITests.swift; sourceTree = "<group>"; };
 		973B3E93283BCC7E00F98571 /* wwdcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwdcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		973B3EE6283BDF2300F98571 /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		973B3EEB283BDF5A00F98571 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		973B3EED283BDF9C00F98571 /* BookCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCover.swift; sourceTree = "<group>"; };
+		973B3EF0283BE14D00F98571 /* bookData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bookData.json; sourceTree = "<group>"; };
+		973B3EF1283BE46300F98571 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		973B3EF8283BFE0000F98571 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,9 @@
 		973B3E75283BCC7B00F98571 /* wwdc */ = {
 			isa = PBXGroup;
 			children = (
+				973B3EEF283BE0FF00F98571 /* Resources */,
+				973B3EEA283BDF5200F98571 /* Model */,
+				973B3EE5283BDF1800F98571 /* Book */,
 				973B3E76283BCC7B00F98571 /* wwdcApp.swift */,
 				973B3E78283BCC7B00F98571 /* ContentView.swift */,
 				973B3E7A283BCC7E00F98571 /* Assets.xcassets */,
@@ -125,6 +140,33 @@
 				973B3E93283BCC7E00F98571 /* wwdcUITestsLaunchTests.swift */,
 			);
 			path = wwdcUITests;
+			sourceTree = "<group>";
+		};
+		973B3EE5283BDF1800F98571 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				973B3EE6283BDF2300F98571 /* BookCard.swift */,
+				973B3EED283BDF9C00F98571 /* BookCover.swift */,
+				973B3EF8283BFE0000F98571 /* BookView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		973B3EEA283BDF5200F98571 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				973B3EEB283BDF5A00F98571 /* Book.swift */,
+				973B3EF1283BE46300F98571 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		973B3EEF283BE0FF00F98571 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				973B3EF0283BE14D00F98571 /* bookData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973B3EF7283BFA4D00F98571 /* bookData.json in Resources */,
 				973B3E7E283BCC7E00F98571 /* Preview Assets.xcassets in Resources */,
 				973B3E7B283BCC7E00F98571 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973B3EEE283BDF9C00F98571 /* BookCover.swift in Sources */,
+				973B3EE7283BDF2300F98571 /* BookCard.swift in Sources */,
+				973B3EEC283BDF5A00F98571 /* Book.swift in Sources */,
 				973B3E79283BCC7B00F98571 /* ContentView.swift in Sources */,
 				973B3E77283BCC7B00F98571 /* wwdcApp.swift in Sources */,
+				973B3EF9283BFE0000F98571 /* BookView.swift in Sources */,
+				973B3EF2283BE46300F98571 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
